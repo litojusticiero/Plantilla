@@ -65,7 +65,37 @@
         }
     function closeForm10() {
         document.getElementById('guedes').removeAttribute('open');
-        }      
+        }
+    function openForm11() {
+        document.getElementById('wass').setAttribute('open', 'open')
+        }
+    function closeForm11() {
+        document.getElementById('wass').removeAttribute('open');
+        }
+    function openForm12() {
+        document.getElementById('vallejo').setAttribute('open', 'open')
+        }
+    function closeForm12() {
+        document.getElementById('vallejo').removeAttribute('open');
+        }  
+    function openForm13() {
+        document.getElementById('gameiro').setAttribute('open', 'open')
+        }
+    function closeForm13() {
+        document.getElementById('gameiro').removeAttribute('open');
+        } 
+    function openForm14() {
+        document.getElementById('lee').setAttribute('open', 'open')
+        }
+    function closeForm14() {
+        document.getElementById('lee').removeAttribute('open');
+        }
+    function openForm15() {
+        document.getElementById('maxi').setAttribute('open', 'open')
+        }
+    function closeForm15() {
+        document.getElementById('maxi').removeAttribute('open');
+        }                  
     </script>
 </head>
 <body>
@@ -90,11 +120,12 @@
                 <img class="small" src="img/mangala.png" alt="mangala" onclick="openForm6()"> <img class="small" src="img/paulista.png" alt="paulista"onclick="openForm7()"></li>
                 <h3>Centrocampistas</h3>
                 <li><img class="small" src="img/racic.png" alt="racic" onclick="openForm8()"> <img class="small" src="img/soler.png" alt="soler" onclick="openForm9()"> 
-                <img class="small" src="img/guedes.png" alt="guedes" onclick="openForm10()">
-                <img class="small" src="img/wass.png" alt="wass"></li>
+                <img class="small" src="img/guedes.png" alt="guedes" onclick="openForm10()"> <img class="small" src="img/lee.png" alt="lee" onclick="openForm14()">
+                <img class="small" src="img/wass.png" alt="wass" onclick="openForm11()"></li>
                 <h3>Delaneros</h3>
-                <li><img class="small" src="img/vallejo.png" alt="vallejo"> <img class="small" src="img/gameiro.png" alt="gameiro"> <img class="small" src="img/lee.png" alt="lee">
-                <img class="small" src="img/maxi.png" alt="maxi"></li>
+                <li><img class="small" src="img/vallejo.png" alt="vallejo" onclick="openForm12()"> <img class="small" src="img/gameiro.png" alt="gameiro" onclick="openForm13()">
+                
+                <img class="small" src="img/maxi.png" alt="maxi" onclick="openForm15()"></li>
                 </ul>  
 
         </section>
@@ -419,6 +450,164 @@
                     </table>
                 </article>
                <input type="button" value="cerrar" onclick="closeForm10()">
+            </dialog>
+        </section>
+        <section>
+            <dialog class="modal" id="wass">
+                
+                <article class="right">
+                    <img class="med" src="img/wass.png" alt="wass">
+                    <h2>BIOGRAFÍA</h2>
+                    Daniel Wass <br>
+                    Jugador danés nacido en Gladsaxe el 31 de mayo de 1989. Se inició en el fútbol en las categorías inferiores del Bröndby IF con el que debutó en competición europea en 19 años.
+                    Con 22 años recaló en el SL Benfica, antes de jugar cuatro temporadas en el Evian FC de la Ligue 1 francesa, tres temporadas en el Celta de Vigo 
+                    y llegar en su madurez futbolística al Valencia CF en el verano de 2018. Ha sido internacional absoluto con la selección de Dinamarca con la que
+                    participó en la Eurocopa de 2012.
+                    <table>
+                        <tr class="or">
+                            <td>EDAD</td>
+                            <td>PAÍS</td>
+                            <td>POSICIÓN</td>
+                            <td>NÚMERO DE CAMISETA</td>
+                            <td>FECHA DE NACIMIENTO</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>DINAMARCA</td>
+                            <td>CENTROCAMPISTA</td>
+                            <td>18</td>
+                            <td>31/05/1989</td>
+                        </tr>
+                    </table>
+                </article>
+               <input type="button" value="cerrar" onclick="closeForm11()">
+            </dialog>
+        </section>
+        <section>
+            <dialog class="modal" id="vallejo">
+                
+                <article class="right">
+                    <img class="med" src="img/vallejo.png" alt="vallejo">
+                    <h2>BIOGRAFÍA</h2>
+                    Manu Vallejo <br>
+                    Futbolista español nacido en Chiclana el 14 de febrero de 1997. Gaditano de nacimiento, Manu Vallejo se formó como futbolista en el Cadiz CF donde fue creciendo hasta alcanzar 
+                    el primer equipo y completar una gran temporada en Segunda División con 8 tantos y
+                    estando muy cerca de disputar el play off de ascenso a Primera. Es internacional con la selección española sub 21 con la que se proclamó campeón de Europa el verano pasado.
+                    <table>
+                        <tr class="or">
+                            <td>EDAD</td>
+                            <td>PAÍS</td>
+                            <td>POSICIÓN</td>
+                            <td>NÚMERO DE CAMISETA</td>
+                            <td>FECHA DE NACIMIENTO</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>ESPAÑA</td>
+                            <td>DELANTERO</td>
+                            <td>21</td>
+                            <td>14/02/1997</td>
+                        </tr>
+                    </table>
+                </article>
+               <input type="button" value="cerrar" onclick="closeForm12()">
+            </dialog>
+        </section>
+        <section>
+            <dialog class="modal" id="gameiro">
+                
+                <article class="right">
+                    <img class="med" src="img/gameiro.png" alt="gameiro">
+                    <h2>BIOGRAFÍA</h2>
+                    Kevin Gameiro <br>
+                    Futbolista francés nacido en Senils (Oise) el 9 de mayo de 1987. Goleador de larga trayectoria que debutó en la Ligue 1 con 18 años en el Racing Estrasburgo,
+                    de donde pasó al Lorient y al Paris Sanint Germain, con el que ganó la Ligue 1 en 2013. Llegó a LaLiga en el verano de 2013 y en España ha conquistado 4
+                    títulos de la UEFA Europa League con el Sevilla FC y el Club Atlético de Madrid. 
+                    En el verano de 2018 llegó al Valencia donde anotó su primer gol en la victoria ante la Real Sociedad en septiembre de 2019. Ha sido internacional
+                    absoluto con la selección de Francia.
+                    <br>
+                    <table>
+                        <tr class="or">
+                            <td>EDAD</td>
+                            <td>PAÍS</td>
+                            <td>POSICIÓN</td>
+                            <td>NÚMERO DE CAMISETA</td>
+                            <td>FECHA DE NACIMIENTO</td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>FRANCIA</td>
+                            <td>DELANTERO</td>
+                            <td>9</td>
+                            <td>09/05/1987</td>
+                        </tr>
+                    </table>
+                </article>
+               <input type="button" value="cerrar" onclick="closeForm13()">
+            </dialog>
+        </section>
+        <section>
+            <dialog class="modal" id="lee">
+                
+                <article class="right">
+                    <img class="med" src="img/lee.png" alt="lee">
+                    <h2>BIOGRAFÍA</h2>
+                    Lee Kang-In <br>
+                    Con solo 11 años llegó Kang In a la Academia del Valencia CF, a donde se habían trasladado sus padres desde su Corea del Sur natal. 
+                    Pronto deslumbró por sus habilidades y su desparpajo en el terreno de juego que le ha permitido adelantar plazos y jugar siempre en
+                    categorías superiores a su edad. Debutó con gol en el primer equipo en el Trofeo Naranja ante el Bayer Leverkusen y en octubre le llegó el debut en
+                    partido oficial con el primer equipo partido de Copa ante el Ebro, y en enero de 2019 se incorporó al primer equipo de forma definitiva a solo unos
+                    días de cumplir los 18 años.
+                    <br>
+                    <table>
+                        <tr class="or">
+                            <td>EDAD</td>
+                            <td>PAÍS</td>
+                            <td>POSICIÓN</td>
+                            <td>NÚMERO DE CAMISETA</td>
+                            <td>FECHA DE NACIMIENTO</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>COREA DEL SUR</td>
+                            <td>CENTROCAMPISTA</td>
+                            <td>20</td>
+                            <td>19/02/2001</td>
+                        </tr>
+                    </table>
+                </article>
+               <input type="button" value="cerrar" onclick="closeForm14()">
+            </dialog>
+        </section>
+        <section>
+            <dialog class="modal" id="maxi">
+                
+                <article class="right">
+                    <img class="med" src="img/maxi.png" alt="maxi">
+                    <h2>BIOGRAFÍA</h2>
+                    Maxi Gómez <br>
+                    Delantero uruguayo nacido en Paysandú el 14 de agosto de 1996. Siempre con el gol en la cabeza Maxi se inició en el fútbol en el Club Atlético Litoral,
+                    desde donde se trasladó a Montevideo para enrolarse en las filas del Defensor Sporting donde anotó 31 goles en 52 partidos.
+                    Dio el salto a Europa y repitió cifras goleadoras en el Real Club Celta de Vigo con 31 goles en dos temporadas. Es internacional con la selección absoluta de Uruguay.
+                    <br>
+                    <table>
+                        <tr class="or">
+                            <td>EDAD</td>
+                            <td>PAÍS</td>
+                            <td>POSICIÓN</td>
+                            <td>NÚMERO DE CAMISETA</td>
+                            <td>FECHA DE NACIMIENTO</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>URUGUAY</td>
+                            <td>DELANTERO</td>
+                            <td>22</td>
+                            <td>14/08/1996</td>
+                        </tr>
+                    </table>
+                </article>
+               <input type="button" value="cerrar" onclick="closeForm15()">
             </dialog>
         </section>
         
