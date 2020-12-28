@@ -11,6 +11,10 @@ h1{
 }
 h2{
     color: white;
+    background: rgba(0, 0, 0, 0.4);
+}
+h3{
+    background: rgba(0, 0, 0, 0.4);
 }
 nav{
     background-color: rgb(245, 196, 106);
@@ -19,13 +23,48 @@ nav{
 section{
     text-align: center;
     font-size: 80%;
-    color: white; 
+    color: white;     
 }
-img{
+p{
+    background: rgba(0, 0, 0, 0.5);
+}
+.right{
+    float: right;
+    text-align: center;
+}
+img.small:hover{
+   background-color: yellow;
+}
+img.small{
     height: 300px;
 }
-
+img.med{
+    height: 800px;
+    float: left;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
 ul{
     list-style: none;
     text-align: left;
 }
+.modal {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+  }
+  td{
+      padding: 12px;;
+  }
+  tr{
+      text-align: center;
+  }
+  tr.or{
+      color: orange;
+      font-size: 70%;
+  }

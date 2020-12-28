@@ -5,29 +5,423 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantilla</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+    function openForm1() {
+        document.getElementById('cillessen').setAttribute('open', 'open')
+        }
+    function closeForm1() {
+        document.getElementById('cillessen').removeAttribute('open');
+        }
+    function openForm2() {
+        document.getElementById('jaume').setAttribute('open', 'open')
+        }
+    function closeForm2() {
+        document.getElementById('jaume').removeAttribute('open');
+        }
+    function openForm3() {
+        document.getElementById('correia').setAttribute('open', 'open')
+        }
+    function closeForm3() {
+        document.getElementById('correia').removeAttribute('open');
+        } 
+    function openForm4() {
+        document.getElementById('lato').setAttribute('open', 'open')
+        }
+    function closeForm4() {
+        document.getElementById('lato').removeAttribute('open');
+        } 
+    function openForm5() {
+        document.getElementById('diakhabi').setAttribute('open', 'open')
+        }
+    function closeForm5() {
+        document.getElementById('diakhabi').removeAttribute('open');
+        } 
+    function openForm6() {
+        document.getElementById('mangala').setAttribute('open', 'open')
+        }
+    function closeForm6() {
+        document.getElementById('mangala').removeAttribute('open');
+        } 
+    function openForm7() {
+        document.getElementById('paulista').setAttribute('open', 'open')
+        }
+    function closeForm7() {
+        document.getElementById('paulista').removeAttribute('open');
+        } 
+    function openForm8() {
+        document.getElementById('racic').setAttribute('open', 'open')
+        }
+    function closeForm8() {
+        document.getElementById('racic').removeAttribute('open');
+        }   
+    function openForm9() {
+        document.getElementById('soler').setAttribute('open', 'open')
+        }
+    function closeForm9() {
+        document.getElementById('soler').removeAttribute('open');
+        }           
+    function openForm10() {
+        document.getElementById('guedes').setAttribute('open', 'open')
+        }
+    function closeForm10() {
+        document.getElementById('guedes').removeAttribute('open');
+        }      
+    </script>
 </head>
 <body>
     <header><h1>Plantillas</h1></header>
     <nav>
+        <a href="index.html">Home</a>
         <a href="plantilla.html">Plantillas</a>
         <a href="taquillas.html">Taquillas</a>
-        <a href="contacto.html">Contacto</a>           
+        <a href="contacto.html">Contacto</a>   
+        <a href="registro.html">Registrate</a>           
     </nav>
     <main>
         <section>
             <ul>
                 <h3>Porteros</h3>
-                <li> <img src="img/cillessen.png" alt="cillessen">
-                <img src="img/jaume.png" alt="jaume"></li>
+                <li> <img class="small" src="img/cillessen.png" alt="cillessen" onclick="openForm1()"> 
+   
+                <img class="small" src="img/jaume.png" alt="jaume" onclick="openForm2()"></li>
                 <h3>Defensas</h3>
-                <li><img src="img/correia.png" alt="correia"> <img src="img/lato.png" alt="lato"> <img src="img/diakhabi.png" alt="diakhabi"> <img src="img/mangala.png" alt="mangala">
-                <img src="img/paulista.png" alt="paulista"></li>
+                <li><img class="small" src="img/correia.png" alt="correia" onclick="openForm3()"> <img class="small" src="img/lato.png" alt="lato" onclick="openForm4()"> 
+                <img class="small"  src="img/diakhabi.png" alt="diakhabi" onclick="openForm5()"> 
+                <img class="small" src="img/mangala.png" alt="mangala" onclick="openForm6()"> <img class="small" src="img/paulista.png" alt="paulista"onclick="openForm7()"></li>
                 <h3>Centrocampistas</h3>
-                <li><img src="img/racic.png" alt="racic"> <img src="img/soler.png" alt="soler"> <img src="img/guedes.png" alt="guedes"> <img src="img/wass.png" alt="wass"></li>
+                <li><img class="small" src="img/racic.png" alt="racic" onclick="openForm8()"> <img class="small" src="img/soler.png" alt="soler" onclick="openForm9()"> 
+                <img class="small" src="img/guedes.png" alt="guedes" onclick="openForm10()">
+                <img class="small" src="img/wass.png" alt="wass"></li>
                 <h3>Delaneros</h3>
-                <li><img src="img/vallejo.png" alt="vallejo"> <img src="img/gameiro.png" alt="gameiro"> <img src="img/lee.png" alt="lee"> <img src="img/maxi.png" alt="maxi"></li>
+                <li><img class="small" src="img/vallejo.png" alt="vallejo"> <img class="small" src="img/gameiro.png" alt="gameiro"> <img class="small" src="img/lee.png" alt="lee">
+                <img class="small" src="img/maxi.png" alt="maxi"></li>
                 </ul>  
+
+        </section>
     </main>
+        <section>
+            <dialog class="modal" id="cillessen">
+                
+                <article class="right">
+                    <img class="med" src="img/cillessen.png" alt="cillessen">
+                    <h2>BIOGRAFÍA</h2>
+                    Jasper Cillessen <br>
+                    Futbolista neerlandés nacido en Nijmegen el 22 de abril de 1989. Guardameta internacional con la selección holandesa,
+                    Cillessen se inició en el fútbol en las categorías inferiores del NEC Nijmegen antes de recalar en el Ajax de Amsterdam donde jugó 5 temporadas
+                    y ganó 3 ligas. Llegó a España para enrolarse en las filas del FC Barcelona, club en el que ha permanecido 3 temporadas en las que ha conquistado 2
+                    Copas del Rey, 2 Ligas y 1 Supercopa de España.
+                <br>
+                <br>
+                    <table>
+                        <tr class="or">
+                            <td>EDAD</td>
+                            <td>PAÍS</td>
+                            <td>POSICIÓN</td>
+                            <td>NÚMERO DE CAMISETA</td>
+                            <td>FECHA DE NACIMIENTO</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>PAÍSES BAJOS</td>
+                            <td>PORTERO</td>
+                            <td>13</td>
+                            <td>22/04/1989</td>
+                        </tr>
+                    </table>
+                </article>
+               <input type="button" value="cerrar" onclick="closeForm1()">
+            </dialog>
+        </section>
+        <section>
+            <dialog class="modal" id="jaume">
+                
+                <article class="right">
+                    <img class="med" src="img/jaume.png" alt="jaume">
+                    <h2>BIOGRAFÍA</h2>
+                    Jaume Doménech <br>
+                    Jugador valenciano nacido en Almenara el 5 de noviembre de 1990. Se inició en el fútbol en el club de su localidad natal,
+                    la UD Almenara, bajo las órdenes del ex jugador del Valencia CF José Vicente Forment. Tras pasar por diversas escuelas llegó
+                    al Valencia Mestalla en 2013 y en 2015 se incorpora a la plantilla del primer equipo. Debutó en El Molinón con una portentosa
+                    actuación ante el Sporting de Gijón en la victoria por 0-1. Es uno de los actuales capitanes del Valencia CF.
+                <br>
+                <br>
+                    <table>
+                        <tr class="or">
+                            <td>EDAD</td>
+                            <td>PAÍS</td>
+                            <td>POSICIÓN</td>
+                            <td>NÚMERO DE CAMISETA</td>
+                            <td>FECHA DE NACIMIENTO</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>ESPAÑA</td>
+                            <td>PORTERO</td>
+                            <td>1</td>
+                            <td>05/11/1990</td>
+                        </tr>
+                    </table>
+                </article>
+               <input type="button" value="cerrar" onclick="closeForm2()">
+            </dialog>
+        </section>
+        <section>
+            <dialog class="modal" id="correia">
+                
+                <article class="right">
+                    <img class="med" src="img/correia.png" alt="correia">
+                    <h2>BIOGRAFÍA</h2>
+                    Thierry Correia <br>
+                    Futbolista portugués nacido en Amadora el 9 de marzo de 1999. Joven y prometedor lateral formado en las categorías inferiores del Sporting de Portugal,
+                    donde ha ido creciendo ocupando la banda derecha. Debutó en competición europea ante el Qarabag FK y jugó su primer partido como titular con el Sporting 
+                    en un amistoso precisamente ante el Valencia CF. Es internacional en todas las categorías inferiores de Portugal con la que ha sido campeón de Europa sub 17
+                    y sub 19.
+                <br>
+                <br>
+                    <table>
+                        <tr class="or">
+                            <td>EDAD</td>
+                            <td>PAÍS</td>
+                            <td>POSICIÓN</td>
+                            <td>NÚMERO DE CAMISETA</td>
+                            <td>FECHA DE NACIMIENTO</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>PORTUGAL</td>
+                            <td>DEFENSA</td>
+                            <td>2</td>
+                            <td>09/03/1999</td>
+                        </tr>
+                    </table>
+                </article>
+               <input type="button" value="cerrar" onclick="closeForm3()">
+            </dialog>
+        </section>
+        <section>
+            <dialog class="modal" id="lato">
+                
+                <article class="right">
+                    <img class="med" src="img/lato.png" alt="lato">
+                    <h2>BIOGRAFÍA</h2>
+                    Antonio Latorre "Toni lato" <br>
+                    Jugador valenciano nacido en la Pobla de Vallbona el 21 de noviembre de 1997. Lato es un producto 100% de la Academia del Valencia CF donde llegó como prebenjamín, 
+                    y junto con Carlos Soler, fue quemando etapas hasta llegar al primer equipo y ser punta de lanza de la generación del 97. 
+                    Debutó en partido oficial con 18 años en febrero de 2016 en la UEFA Europa League en la victoria 4-0 ante el Rapid de Viena. 
+                    Es internacional sub’21 con la selección española.
+                <br>
+                <br>
+                    <table>
+                        <tr class="or">
+                            <td>EDAD</td>
+                            <td>PAÍS</td>
+                            <td>POSICIÓN</td>
+                            <td>NÚMERO DE CAMISETA</td>
+                            <td>FECHA DE NACIMIENTO</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>ESPAÑA</td>
+                            <td>DEFENSA</td>
+                            <td>3</td>
+                            <td>21/11/1997</td>
+                        </tr>
+                    </table>
+                </article>
+               <input type="button" value="cerrar" onclick="closeForm4()">
+            </dialog>
+        </section>
+        <section>
+            <dialog class="modal" id="diakhabi">
+                
+                <article class="right">
+                    <img class="med" src="img/diakhabi.png" alt="diakhabi">
+                    <h2>BIOGRAFÍA</h2>
+                    Mouctar Diakhaby <br>
+                    Jugador francés nacido en Vendôme el 19 de diciembre de 1996. Diakhaby llega al Valencia CF en el verano de 2018 tras irrumpir en el
+                    Olympique de Lyon equipo con el que debutó en la Ligue 1 y en poco tiempo, pese a su juventud, acumuló 50 partidos en competiciones oficiales,
+                    incluida la UEFA Europa League y la UEFA Champions League. Es internacional sub’21 con Francia.
+                <br>
+                <br>
+                    <table>
+                        <tr class="or">
+                            <td>EDAD</td>
+                            <td>PAÍS</td>
+                            <td>POSICIÓN</td>
+                            <td>NÚMERO DE CAMISETA</td>
+                            <td>FECHA DE NACIMIENTO</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>FRANCIA</td>
+                            <td>DEFENSA</td>
+                            <td>12</td>
+                            <td>19/12/1996</td>
+                        </tr>
+                    </table>
+                </article>
+               <input type="button" value="cerrar" onclick="closeForm5()">
+            </dialog>
+        </section>
+        <section>
+            <dialog class="modal" id="mangala">
+                
+                <article class="right">
+                    <img class="med" src="img/mangala.png" alt="mangala">
+                    <h2>BIOGRAFÍA</h2>
+                    Eliaquim Mangala<br>
+                    Jugador francés de origen congoleño nacido el 13 de febrero de 1991 en Colombes. Cumple en el Valencia CF su segunda etapa tras haber estado cedido la temporada 2016/17
+                    desde el Manchester City. Dio sus primeros pasos en el mundo del fútbol en el UR Namur de Bélgica antes de dar el paso al Standard de Lieja, 
+                    donde se reconvirtió en central siempre acompañado por su físico portentoso. Ha jugado en FC Porto, Manchester City y Everton FC. 
+                    Ha sido internacional con la selección absoluta de Francia.
+                <br>
+                <br>
+                    <table>
+                        <tr class="or">
+                            <td>EDAD</td>
+                            <td>PAÍS</td>
+                            <td>POSICIÓN</td>
+                            <td>NÚMERO DE CAMISETA</td>
+                            <td>FECHA DE NACIMIENTO</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>FRANCIA</td>
+                            <td>DEFENSA</td>
+                            <td>12</td>
+                            <td>13/02/1991</td>
+                        </tr>
+                    </table>
+                </article>
+               <input type="button" value="cerrar" onclick="closeForm6()">
+            </dialog>
+        </section>
+        <section>
+            <dialog class="modal" id="paulista">
+                
+                <article class="right">
+                    <img class="med" src="img/paulista.png" alt="paulista">
+                    <h2>BIOGRAFÍA</h2>
+                    Gabriel Paulista<br>
+                    Jugador brasileño nacido en Sao Paulo el 26 de noviembre de 1990. Se inició en el fútbol en el Esporte Clube Vitória, donde jugó 4 temporadas.
+                    El balón cambió su vida y la de su familia. Orgulloso de sus raíces, que forman parte de su nombre futbolístico, 
+                    Paulista dio el salto a Europa en 2013 donde jugó en el Villarreal CF y en el Arsenal FC. En el verano de 2017 llegó al Valencia CF donde
+                    se reencontró con Marcelino García Toral, el entrenador que mejor rendimiento ha conseguido de Gabriel.
+                <br>
+                <br>
+                    <table>
+                        <tr class="or">
+                            <td>EDAD</td>
+                            <td>PAÍS</td>
+                            <td>POSICIÓN</td>
+                            <td>NÚMERO DE CAMISETA</td>
+                            <td>FECHA DE NACIMIENTO</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>BRASIL</td>
+                            <td>DEFENSA</td>
+                            <td>5</td>
+                            <td>26/11/1990</td>
+                        </tr>
+                    </table>
+                </article>
+               <input type="button" value="cerrar" onclick="closeForm7()">
+            </dialog>
+        </section>
+        <section>
+            <dialog class="modal" id="racic">
+                
+                <article class="right">
+                    <img class="med" src="img/racic.png" alt="racic">
+                    <h2>BIOGRAFÍA</h2>
+                    Uros Racic <br>
+                    El 13 de junio de 2018, con 20 años, se hizo oficial su fichaje por el Valencia Club de Fútbol de la Liga Santander de España.El futbolista no se lo pensó dos veces a la hora
+                    de firmar por el club valencianista. Así que aceptó empezar la temporada con ficha del equipo filial, el Valencia Mestalla del grupo III de Segunda División B,
+                    a las órdenes del técnico Miguel Grau.​
+                    <table>
+                        <tr class="or">
+                            <td>EDAD</td>
+                            <td>PAÍS</td>
+                            <td>POSICIÓN</td>
+                            <td>NÚMERO DE CAMISETA</td>
+                            <td>FECHA DE NACIMIENTO</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>SERBIA</td>
+                            <td>CENTROCAMPISTA</td>
+                            <td>17</td>
+                            <td>17/03/1998</td>
+                        </tr>
+                    </table>
+                </article>
+               <input type="button" value="cerrar" onclick="closeForm8()">
+            </dialog>
+        </section>
+        <section>
+            <dialog class="modal" id="soler">
+                
+                <article class="right">
+                    <img class="med" src="img/soler.png" alt="soler">
+                    <h2>BIOGRAFÍA</h2>
+                    Carlos Soler <br>
+                    Jugador nacido en Valencia el 2 de enero de 1997. Se inició en el fútbol siendo un niño en los campos de tierra del Bonrepós. Con apenas 7 años se incorporó a
+                    la Academia del Valencia CF donde fue quemando etapas y variando su posición inicial de delantero, marcando más de 500 goles, a la de mediocentro. Debutó con
+                    el primer equipo en diciembre de 2016 ante la Real Sociedad,
+                    y se consolidó en el primer equipo con Voro en el banquillo, anotando 3 goles en la recta final de esa temporada. Es internacional sub’21 con la selección española.
+                    <table>
+                        <tr class="or">
+                            <td>EDAD</td>
+                            <td>PAÍS</td>
+                            <td>POSICIÓN</td>
+                            <td>NÚMERO DE CAMISETA</td>
+                            <td>FECHA DE NACIMIENTO</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>ESPAÑA</td>
+                            <td>CENTROCAMPISTA</td>
+                            <td>8</td>
+                            <td>02/01/1997</td>
+                        </tr>
+                    </table>
+                </article>
+               <input type="button" value="cerrar" onclick="closeForm9()">
+            </dialog>
+        </section>
+        <section>
+            <dialog class="modal" id="guedes">
+                
+                <article class="right">
+                    <img class="med" src="img/guedes.png" alt="guedes">
+                    <h2>BIOGRAFÍA</h2>
+                    Gonçalo Guedes <br>
+                    Portugués nacido en Lisboa el 29 de Noviembre de 1996. Empezó su carrera en el SL Benfica, haciendo su debut profesional en abril de 2014 con 17 años.
+                    Después de 11 goles en 63 partidos, ganando 5 títulos, fue traspasado al París Saint Germain, siendo cedido al Valencia en la temporada 17/18 donde fue 
+                    uno de los máximos asistentes de LaLiga. Se unió definitivamente al Valencia CF en agosto de 2018. Forma parte de la selección nacional portuguesa y
+                    jugó el Mundial 2018 en Rusia.
+                    <table>
+                        <tr class="or">
+                            <td>EDAD</td>
+                            <td>PAÍS</td>
+                            <td>POSICIÓN</td>
+                            <td>NÚMERO DE CAMISETA</td>
+                            <td>FECHA DE NACIMIENTO</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>PORTUGAL</td>
+                            <td>CENTROCAMPISTA</td>
+                            <td>7</td>
+                            <td>29/11/1996</td>
+                        </tr>
+                    </table>
+                </article>
+               <input type="button" value="cerrar" onclick="closeForm10()">
+            </dialog>
+        </section>
+        
     
 </body>
 </html>
