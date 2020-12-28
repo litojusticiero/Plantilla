@@ -1,3 +1,20 @@
 body{
-    background-image: url("img/balones.png")
+    background-image: url("img/balones4.png");
+    background-size: cover;
+    font-size: 250%;
+    
+}
+h1{
+    background-color: darkorange;
+    text-align: center;
+    color: white;
+}
+nav{
+    background-color: rgb(245, 196, 106);
+    text-align: center;
+}
+section{
+    text-align: center;
+    font-size: 80%;
+    color: white; 
 }
