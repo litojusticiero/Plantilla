@@ -11,10 +11,10 @@ h1{
 }
 h2{
     color: white;
-    background: rgba(0, 0, 0, 0.4);
 }
 h3{
-    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
 }
 nav{
     background-color: rgb(245, 196, 106);
@@ -25,8 +25,21 @@ section{
     font-size: 80%;
     color: white;     
 }
-p{
-    background: rgba(0, 0, 0, 0.5);
+.back{
+    background: rgba(0, 0, 0, 0.5)
+}
+.mid{
+    text-align: center;
+}
+.mitad{
+    position: relative;
+    top: auto;
+    bottom: auto;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    color: tomato;
+    border: bisque 1px solid;
+    
 }
 .right{
     float: right;
@@ -34,6 +47,19 @@ p{
 }
 img.small:hover{
    background-color: yellow;
+}
+img.smaller{
+    height: 100px;
+    margin-right: 260px;
+    margin-left: 20px;
+}
+img.smaller2{
+    height: 100px;
+    margin-left: 150px;
+}
+img.smaller3{
+    height: 200px;
+    position: auto;
 }
 img.small{
     height: 300px;
@@ -59,12 +85,21 @@ ul{
     transition: all 0.5s;
   }
   td{
-      padding: 12px;;
+    width: 20%;
   }
   tr{
-      text-align: center;
+    text-align: center;
   }
   tr.or{
-      color: orange;
-      font-size: 70%;
+    color: orange;
+    font-size: 70%;
+  }
+  .red{
+      color: red;
+  }
+  td.right{
+      color: bisque;
+  }
+  td.left{
+    width: 20%;
   }

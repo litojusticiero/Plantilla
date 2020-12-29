@@ -99,34 +99,35 @@
     </script>
 </head>
 <body>
-    <header><h1>Plantillas</h1></header>
+    <header><h1>Plantilla</h1></header>
     <nav>
         <a href="index.html">Home</a>
-        <a href="plantilla.html">Plantillas</a>
+        <a href="plantilla.html">Plantilla</a>
         <a href="taquillas.html">Taquillas</a>
         <a href="contacto.html">Contacto</a>   
-        <a href="registro.html">Registrate</a>           
+        <a href="registro.html">Registrate</a>   
+        <a href="login.html">Iniciar sesión</a>         
     </nav>
     <main>
         <section>
             <ul>
-                <h3>Porteros</h3>
+                <h3 class="back">Porteros</h3>
                 <li> <img class="small" src="img/cillessen.png" alt="cillessen" onclick="openForm1()"> 
    
                 <img class="small" src="img/jaume.png" alt="jaume" onclick="openForm2()"></li>
-                <h3>Defensas</h3>
+                <h3 class="back">Defensas</h3>
                 <li><img class="small" src="img/correia.png" alt="correia" onclick="openForm3()"> <img class="small" src="img/lato.png" alt="lato" onclick="openForm4()"> 
                 <img class="small"  src="img/diakhabi.png" alt="diakhabi" onclick="openForm5()"> 
                 <img class="small" src="img/mangala.png" alt="mangala" onclick="openForm6()"> <img class="small" src="img/paulista.png" alt="paulista"onclick="openForm7()"></li>
-                <h3>Centrocampistas</h3>
+                <h3 class="back">Centrocampistas</h3>
                 <li><img class="small" src="img/racic.png" alt="racic" onclick="openForm8()"> <img class="small" src="img/soler.png" alt="soler" onclick="openForm9()"> 
                 <img class="small" src="img/guedes.png" alt="guedes" onclick="openForm10()"> <img class="small" src="img/lee.png" alt="lee" onclick="openForm14()">
                 <img class="small" src="img/wass.png" alt="wass" onclick="openForm11()"></li>
-                <h3>Delaneros</h3>
+                <h3 class="back">Delaneros</h3>
                 <li><img class="small" src="img/vallejo.png" alt="vallejo" onclick="openForm12()"> <img class="small" src="img/gameiro.png" alt="gameiro" onclick="openForm13()">
                 
                 <img class="small" src="img/maxi.png" alt="maxi" onclick="openForm15()"></li>
-                </ul>  
+            </ul>  
 
         </section>
     </main>
@@ -134,7 +135,7 @@
             <dialog class="modal" id="cillessen">
                 
                 <article class="right">
-                    <img class="med" src="img/cillessen.png" alt="cillessen">
+                    <img class="med" src="img/cillessen.png" alt="cillessen" onclick="closeForm1()">
                     <h2>BIOGRAFÍA</h2>
                     Jasper Cillessen <br>
                     Futbolista neerlandés nacido en Nijmegen el 22 de abril de 1989. Guardameta internacional con la selección holandesa,
@@ -167,7 +168,7 @@
             <dialog class="modal" id="jaume">
                 
                 <article class="right">
-                    <img class="med" src="img/jaume.png" alt="jaume">
+                    <img class="med" src="img/jaume.png" alt="jaume" onclick="closeForm2()">
                     <h2>BIOGRAFÍA</h2>
                     Jaume Doménech <br>
                     Jugador valenciano nacido en Almenara el 5 de noviembre de 1990. Se inició en el fútbol en el club de su localidad natal,
@@ -200,7 +201,7 @@
             <dialog class="modal" id="correia">
                 
                 <article class="right">
-                    <img class="med" src="img/correia.png" alt="correia">
+                    <img class="med" src="img/correia.png" alt="correia" onclick="closeForm3()">
                     <h2>BIOGRAFÍA</h2>
                     Thierry Correia <br>
                     Futbolista portugués nacido en Amadora el 9 de marzo de 1999. Joven y prometedor lateral formado en las categorías inferiores del Sporting de Portugal,
@@ -233,7 +234,7 @@
             <dialog class="modal" id="lato">
                 
                 <article class="right">
-                    <img class="med" src="img/lato.png" alt="lato">
+                    <img class="med" src="img/lato.png" alt="lato" onclick="closeForm4()">
                     <h2>BIOGRAFÍA</h2>
                     Antonio Latorre "Toni lato" <br>
                     Jugador valenciano nacido en la Pobla de Vallbona el 21 de noviembre de 1997. Lato es un producto 100% de la Academia del Valencia CF donde llegó como prebenjamín, 
@@ -266,7 +267,7 @@
             <dialog class="modal" id="diakhabi">
                 
                 <article class="right">
-                    <img class="med" src="img/diakhabi.png" alt="diakhabi">
+                    <img class="med" src="img/diakhabi.png" alt="diakhabi"onclick="closeForm5()">
                     <h2>BIOGRAFÍA</h2>
                     Mouctar Diakhaby <br>
                     Jugador francés nacido en Vendôme el 19 de diciembre de 1996. Diakhaby llega al Valencia CF en el verano de 2018 tras irrumpir en el
@@ -298,7 +299,7 @@
             <dialog class="modal" id="mangala">
                 
                 <article class="right">
-                    <img class="med" src="img/mangala.png" alt="mangala">
+                    <img class="med" src="img/mangala.png" alt="mangala" onclick="closeForm6()">
                     <h2>BIOGRAFÍA</h2>
                     Eliaquim Mangala<br>
                     Jugador francés de origen congoleño nacido el 13 de febrero de 1991 en Colombes. Cumple en el Valencia CF su segunda etapa tras haber estado cedido la temporada 2016/17
@@ -331,7 +332,7 @@
             <dialog class="modal" id="paulista">
                 
                 <article class="right">
-                    <img class="med" src="img/paulista.png" alt="paulista">
+                    <img class="med" src="img/paulista.png" alt="paulista" onclick="closeForm7()">
                     <h2>BIOGRAFÍA</h2>
                     Gabriel Paulista<br>
                     Jugador brasileño nacido en Sao Paulo el 26 de noviembre de 1990. Se inició en el fútbol en el Esporte Clube Vitória, donde jugó 4 temporadas.
@@ -364,7 +365,7 @@
             <dialog class="modal" id="racic">
                 
                 <article class="right">
-                    <img class="med" src="img/racic.png" alt="racic">
+                    <img class="med" src="img/racic.png" alt="racic" onclick="closeForm8()">
                     <h2>BIOGRAFÍA</h2>
                     Uros Racic <br>
                     El 13 de junio de 2018, con 20 años, se hizo oficial su fichaje por el Valencia Club de Fútbol de la Liga Santander de España.El futbolista no se lo pensó dos veces a la hora
@@ -394,7 +395,7 @@
             <dialog class="modal" id="soler">
                 
                 <article class="right">
-                    <img class="med" src="img/soler.png" alt="soler">
+                    <img class="med" src="img/soler.png" alt="soler" onclick="closeForm9()">
                     <h2>BIOGRAFÍA</h2>
                     Carlos Soler <br>
                     Jugador nacido en Valencia el 2 de enero de 1997. Se inició en el fútbol siendo un niño en los campos de tierra del Bonrepós. Con apenas 7 años se incorporó a
@@ -425,7 +426,7 @@
             <dialog class="modal" id="guedes">
                 
                 <article class="right">
-                    <img class="med" src="img/guedes.png" alt="guedes">
+                    <img class="med" src="img/guedes.png" alt="guedes" onclick="closeForm10()">
                     <h2>BIOGRAFÍA</h2>
                     Gonçalo Guedes <br>
                     Portugués nacido en Lisboa el 29 de Noviembre de 1996. Empezó su carrera en el SL Benfica, haciendo su debut profesional en abril de 2014 con 17 años.
@@ -456,7 +457,7 @@
             <dialog class="modal" id="wass">
                 
                 <article class="right">
-                    <img class="med" src="img/wass.png" alt="wass">
+                    <img class="med" src="img/wass.png" alt="wass" onclick="closeForm11()">
                     <h2>BIOGRAFÍA</h2>
                     Daniel Wass <br>
                     Jugador danés nacido en Gladsaxe el 31 de mayo de 1989. Se inició en el fútbol en las categorías inferiores del Bröndby IF con el que debutó en competición europea en 19 años.
@@ -487,7 +488,7 @@
             <dialog class="modal" id="vallejo">
                 
                 <article class="right">
-                    <img class="med" src="img/vallejo.png" alt="vallejo">
+                    <img class="med" src="img/vallejo.png" alt="vallejo" onclick="closeForm12()">
                     <h2>BIOGRAFÍA</h2>
                     Manu Vallejo <br>
                     Futbolista español nacido en Chiclana el 14 de febrero de 1997. Gaditano de nacimiento, Manu Vallejo se formó como futbolista en el Cadiz CF donde fue creciendo hasta alcanzar 
@@ -517,7 +518,7 @@
             <dialog class="modal" id="gameiro">
                 
                 <article class="right">
-                    <img class="med" src="img/gameiro.png" alt="gameiro">
+                    <img class="med" src="img/gameiro.png" alt="gameiro" onclick="closeForm13()">
                     <h2>BIOGRAFÍA</h2>
                     Kevin Gameiro <br>
                     Futbolista francés nacido en Senils (Oise) el 9 de mayo de 1987. Goleador de larga trayectoria que debutó en la Ligue 1 con 18 años en el Racing Estrasburgo,
@@ -550,7 +551,7 @@
             <dialog class="modal" id="lee">
                 
                 <article class="right">
-                    <img class="med" src="img/lee.png" alt="lee">
+                    <img class="med" src="img/lee.png" alt="lee" onclick="closeForm14()">
                     <h2>BIOGRAFÍA</h2>
                     Lee Kang-In <br>
                     Con solo 11 años llegó Kang In a la Academia del Valencia CF, a donde se habían trasladado sus padres desde su Corea del Sur natal. 
@@ -583,7 +584,7 @@
             <dialog class="modal" id="maxi">
                 
                 <article class="right">
-                    <img class="med" src="img/maxi.png" alt="maxi">
+                    <img class="med" src="img/maxi.png" alt="maxi" onclick="closeForm15()">
                     <h2>BIOGRAFÍA</h2>
                     Maxi Gómez <br>
                     Delantero uruguayo nacido en Paysandú el 14 de agosto de 1996. Siempre con el gol en la cabeza Maxi se inició en el fútbol en el Club Atlético Litoral,
