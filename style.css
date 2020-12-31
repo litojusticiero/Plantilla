@@ -66,8 +66,8 @@ img.small{
     width: 10%;
 }
 img.med{
-    height: 30%;
-    width: 30%;
+    height: 10%;
+    width: 10%;
     float: left;
 }
 table{
@@ -81,7 +81,7 @@ ul{
 .modal {
     background: rgba(0, 0, 0, 0.9);
     color: #fff;
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     transition: all 0.5s;
