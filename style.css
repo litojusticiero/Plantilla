@@ -66,8 +66,10 @@ img.small{
     width: 10%;
 }
 img.med{
-    height: 10%;
-    width: 10%;
+    height: 30%;
+    width: 30%;
+    max-width: 100%;
+    max-height: 100%;
     float: left;
 }
 table{
